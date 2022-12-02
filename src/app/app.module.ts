@@ -6,6 +6,7 @@ import { SubjectsRegistryComponent } from './components/subjects-registry/subjec
 import { SendFormButtonComponent } from './components/subjects-registry/send-form-button/send-form-button.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ItemCardComponent } from './components/item-card/item-card.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HomeComponent } from './pages/home/home.component';
     SubjectsRegistryComponent,
     SendFormButtonComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ItemCardComponent
   ],
   imports: [
     BrowserModule

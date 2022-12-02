@@ -1,27 +1,21 @@
-<div class="container my-5">
-  <div class="card col-5">
+<div class="container d-flex my-5">
+  <div *ngFor="let character of characters" class="card col-4 mx-1">
     <img
-      src="https://www.fatosdesconhecidos.com.br/wp-content/uploads/2018/05/gandalf-the-white-1024x580.jpg"
+      src="{{ character.image }}"
       class="card-img-top"
-      alt="Gandalf, o Branco"
+      alt="{{ character.name }}"
     />
     <div class="card-body">
-      <h3 class="card-title text-center">Gandalf</h3>
+      <h3 class="card-title text-center">{{ character.name }}</h3>
       <p>
         Interpretado por:
-        <a target="_blank" href="https://pt.wikipedia.org/wiki/Ian_McKellen"
-          >Ian McKellen</a
-        >
+        <a target="_blank" href="https://pt.wikipedia.org/wiki/Ian_McKellen">{{
+          character.actor
+        }}</a>
       </p>
       <p class="card-text">
-        Gandalf é um Mago Istari, pertencente à raça dos Maiar, espírito
-        angelical do mundo tolkienano, e costumava andar com Nienna com quem
-        aprendeu a paciência e a compaixão (Silmarillion), mas diz-se que era
-        conselheiro de Irmo Lórien. Foi à Terra-média, incorporado um velho,
-        para ser um dos conselheiros dos homens e impedir que a escuridão
-        voltasse.
+        {{ character.description }}
       </p>
-      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
   </div>
 </div>

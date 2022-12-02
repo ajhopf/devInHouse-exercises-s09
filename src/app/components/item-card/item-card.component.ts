@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CHARACTERS } from 'src/app/constants/item-card/characters';
 
 @Component({
   selector: 'app-item-card',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./item-card.component.css']
 })
 export class ItemCardComponent {
-
+  characters = CHARACTERS;
 }

@@ -1,10 +1,10 @@
 <section
   class="registry-form container mt-5 p-4 border border-secondary rounded"
 >
-  <h2>Registro de Matérias</h2>
+  <h2 id="h2">Registro de Matérias</h2>
 
   <form>
-    <div class="mb-3" *ngFor="let subject of registry">
+    <div *ngFor="let subject of registry" class="mb-3">
       <label for="{{ subject.id }}" class="form-label">{{
         subject.text
       }}</label>

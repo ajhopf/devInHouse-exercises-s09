@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { REGISTRY } from 'src/app/constants/subjects-registry/subjectRegistry';
 import { TEACHERS } from 'src/app/constants/subjects-registry/teachers';
 
@@ -10,4 +10,6 @@ import { TEACHERS } from 'src/app/constants/subjects-registry/teachers';
 export class SubjectsRegistryComponent {
   registry = REGISTRY;
   teachers = TEACHERS;
+  h2 = document.querySelector('#h2');
+  
 }

@@ -7,6 +7,7 @@ import { SendFormButtonComponent } from './components/subjects-registry/send-for
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ItemCardComponent } from './components/item-card/item-card.component';
+import { LocalStorageComponent } from './components/local-storage/local-storage.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ItemCardComponent } from './components/item-card/item-card.component';
     SendFormButtonComponent,
     NavbarComponent,
     HomeComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    LocalStorageComponent
   ],
   imports: [
     BrowserModule

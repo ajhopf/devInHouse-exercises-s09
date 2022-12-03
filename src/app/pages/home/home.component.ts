@@ -8,6 +8,9 @@ import { CHARACTERS } from 'src/app/constants/item-card/characters';
 })
 export class HomeComponent {
   characters = CHARACTERS;
-  
+
+  log(e:Event) {
+    console.log(e)
+  }
 
 }

@@ -1,0 +1,8 @@
+<div class="container my-5">
+  <h2>Digite e seu texto aparecerá sendo formado no console!</h2>
+  <input
+    [(ngModel)]="searchText"
+    name="searchText"
+    (input)="textOutput.emit(searchText)"
+  >
+</div>

@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ItemCardComponent } from './components/item-card/item-card.component';
 import { LocalStorageComponent } from './components/local-storage/local-storage.component';
+import { SearchComponent } from './components/search/search.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { LocalStorageComponent } from './components/local-storage/local-storage.
     NavbarComponent,
     HomeComponent,
     ItemCardComponent,
-    LocalStorageComponent
+    LocalStorageComponent,
+    SearchComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
